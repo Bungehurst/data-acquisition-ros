@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>collect_img</name>
+  <version>2.3.2</version>
+  <description>RealSense Camera package</description>
+  <maintainer email="doron@intel.com">Doron</maintainer>
+  <license>Apache 2.0</license>
+  
+  <url type="website">http://www.ros.org/wiki/RealSense</url>
+  <!-- <url type="bugtracker">https://github.com/intel-ros/realsense/issues</url> -->
+
+  <!-- <author email="sergey.dorodnicov@intel.com">Sergey Dorodnicov</author> -->
+  <author email="doron@intel.com">Doron</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
+  <depend>nodelet</depend>  
+  <depend>genmsg</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf</depend>
+
+</package>

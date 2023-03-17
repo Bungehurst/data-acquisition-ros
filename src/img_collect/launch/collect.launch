@@ -1,0 +1,5 @@
+<launch>
+	
+	<node pkg="collect_img" type="collect_node" name="collect_node" output="screen" />
+
+</launch>
