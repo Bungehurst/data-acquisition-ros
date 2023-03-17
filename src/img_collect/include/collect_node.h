@@ -18,6 +18,9 @@
 #include <atomic>
 #include <mutex> 
 
+// Change Here to choose a absolute path
+#define PATH "/home/nvidia/data-acquisition-ros/src/img_collect/data/"
+
 using namespace std;
 
 static const std::string OPENCV_WINDOW = "Image window";
@@ -65,7 +68,7 @@ public:
         }else{
             time_now = chrono::high_resolution_clock::now();
         }
-        auto err = cv::imwrite("/home/nvidia/rs_collect_catkin/src/img_collect/data/"+to_string(photo_num)+".jpg",cv_ptr->image);
+        auto err = cv::imwrite(PATH+to_string(photo_num)+".jpg",cv_ptr->image);
         photo_num++;
         cv::putText(cv_ptr->image, //target image
             "no."+to_string(photo_num), //text
